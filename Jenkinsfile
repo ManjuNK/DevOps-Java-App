@@ -86,7 +86,7 @@ pipeline{
             steps{
                script{
                    
-                   dockerImageScan("${params.ImageName}","${params.ImageTag}","${params.docker-cred}")
+                   dockerImageScan("${params.ImageName}","${params.ImageTag}","${params.DockerHubUser}")
                }
             }
         }
