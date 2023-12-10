@@ -1,3 +1,7 @@
+def COLOR_MAP = [
+    'FAILURE' : 'danger',
+    'SUCCESS' : 'good'
+]
 @Library('my-shared-library') _
 
 pipeline{
