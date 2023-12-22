@@ -1,8 +1,8 @@
+@Library('my-shared-library') _
 def COLOR_MAP = [
     'FAILURE' : 'danger',
     'SUCCESS' : 'good'
 ]
-@Library('my-shared-library') _
 
 pipeline{
 
@@ -90,7 +90,7 @@ pipeline{
             steps{
                script{
                    
-                   dockerImageScan("${params.ImageName}","${params.ImageTag}","${params.DockerHubUser}")
+                   dockerImageScan("${params.ImageName}","${params.DockerHubUser}")
                }
             }
         }
